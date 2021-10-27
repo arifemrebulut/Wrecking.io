@@ -19,7 +19,6 @@ public class SectionManager : MonoBehaviour
         foreach (GameObject part in sectionParts)
         {
             part.AddComponent<Rigidbody>();
-
             yield return new WaitForSeconds(Random.Range(0.1f, 0.4f));
         }
     }
